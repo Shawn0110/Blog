@@ -1,2 +1,0 @@
-# Blog
- HTML CSS project
