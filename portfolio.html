@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>Portfolio</title>
+	<!-- 인터넷 익스플로러에서 자바스크립트 관련 차단된 컨텐츠 허용 뜨는것 방지-->
+	<!-- saved from url=(0013)about:internet -->
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
+
+	<!-- user style -->
+	<link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+
+	<header class="header-area navbar-fade" id="header">
+		<nav class="navbar">
+			<a class="navbar-brand" id="navbarBrand">Blog</a>
+			<a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
+			<div class="navbar-menu" id="menu">
+				<div class="nav-item"><a class="nav-link" id="navbarAbout">About</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarService">Service</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarPortfolio">Portfolio</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarReview">Review</a></div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="section-container">
+		<div class="welcome-area">
+			<div class="container">
+				<div class="image-slide fade">
+					<img src="img/nature-1828603_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/laptop-2588606_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/girl-2557468_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/guy-1569744_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+
+				<a class="image-prev" id="imagePrev">&#10094;</a>
+				<a class="image-next" id="imageNext">&#10095;</a>
+				
+				<div class="dots">
+					<span class="dot" id="firstDot"></span> 
+					<span class="dot" id="secondDot"></span> 
+					<span class="dot" id="thirdDot"></span>
+					<span class="dot" id="forthDot"></span>
+				</div>
+			</div>
+		</div>
+
+		<section class="about-area" id="about">
+			<div class="title">
+				ABOUT
+			</div>
+			<div class="picture">
+				<img src="img/cat-1246508_1920.jpg">
+				<div class="name">Sami Lim</div>
+				<div class="description">JUNIOR DEVELOPER</div>
+			</div>
+			<div class="text">
+				<div class="intro">
+					A Front-End Web Developer passionate about creating interactive applications and experiences on the web.
+				</div>
+				<ul>
+					<li>
+						<div class="info">
+							<i class="far fa-calendar-alt"></i> December 15th
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fas fa-phone"></i> 123-456-6789
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fas fa-envelope"></i> limsami0110@gmail.com
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fas fa-home"></i> Toronto, Canada
+						</div>
+					</li>
+				</ul>
+				<div class="sns">
+					<a>
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a>
+						<i class="fab fa-github" target="_blank" onclick="location.href='https://github.com/sl0110/';"></i>
+					</a>
+					<a>
+						<i class="fab fa-linkedin-in" target="_blank" onclick="location.href='https://www.linkedin.com/in/limsami/';"></i>
+					</a>
+					<a>
+						<i class="fab fa-google-plus-g"></i>
+					</a>
+					<a>
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="services-area" id="service">
+			<div class="title">
+				SERVICES
+			</div>
+			<div class="container">
+
+				<div class="item">
+					<div class="icon"><span><i class="fab fa-js-square"></i></span></div>
+					<div class="service">JAVASCRIPT</div>
+					<div class="content">JavaScript is an object-based scripting programming language. This language is primarily used within web browsers and has the ability to access built-in objects of other applications as well. It is also being used for server-side network programming, such as runtime environments like Node.js. I am developing a web page using this JavaScript.</div>
+				</div>
+
+				<div class="item">
+					<div class="icon"><span><i class="fas fa-database"></i></span></div>
+					<div class="service">HTML5 & CSS3</div>
+					<div class="content">HTML and CSS are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications</div>
+				</div>
+
+				<div class="item">
+					<div class="icon"><span><i class="fab fa-react"></i></span></div>
+					<div class="service">React</div>
+					<div class="content">React is an open-source front-end JavaScript library for building user interfaces based on UI components. It allows developers to create large web applications that can change data, without reloading the page. I've made several projects using React and I'm still learning it.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio-area" id="portfolio">
+			<div class="title">
+				PORTFOLIO
+			</div>
+			<div class="filter">
+				<ul class="list">
+					<li class="listItem active" id="all">
+						All
+					</li>
+					<li class="listItem" id="uiux">
+						UI/UX
+					</li>
+					<li class="listItem" id="javascript">
+						JAVASCRIPT
+					</li>
+					<li class="listItem" id="react">
+						REACT
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="filterItem uiux javascript">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/programming-2115930_1920.jpg">
+					</div>
+					<div class="main">
+						My portfolio blog
+					</div>
+					<div class="sub">
+						A web application built with HTML5, CSS and JAVASCRIPT
+					</div>
+					<div class="text">
+						https://sl0110.github.io/Blog/
+					</div>
+				</div>
+				<div class="filterItem react uiux">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/shop-2588074_1920.jpg">
+					</div>
+					<div class="main">
+						Shopping mall
+					</div>
+					<div class="sub">
+						A shopping mall web application built with react and redux
+					</div>
+					<div class="text">
+						https://github.com/sl0110/react_shopping
+					</div>
+				</div>
+				<div class="filterItem react javascript">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/work-731198_1920.jpg">
+					</div>
+					<div class="main">
+						Quiz
+					</div>
+					<div class="sub">
+						Convenient UI combining JSX and CSS
+					</div>
+					<div class="text">
+						https://github.com/sl0110/Quiz
+					</div>
+				</div>
+				<div class="filterItem uiux javascript react">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/web-design-2906159_1920.jpg">
+					</div>
+					<div class="main">
+						Coming soon
+					</div>
+					<div class="sub">
+						<!-- sub -->
+					</div>
+					<div class="text">
+						<!-- description -->
+					</div>
+				</div>
+			
+			</div>
+		</section>
+
+		<section class="review-area" id="review">
+			<div class="title">
+				REVIEW
+			</div>
+			<div class="container">
+
+				<a class="review-prev" id="reviewPrev">&#10094;</a>
+				<a class="review-next" id="reviewNext">&#10095;</a>
+
+				<div class="review-slide res-show">
+					<div class="image">
+						<img src="img/profile/actress-2868705_1920.jpg">
+					</div>
+					<div class="name">
+						Sellena
+					</div>
+					<div class="job">
+						Actress
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business.".</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide show">
+					<div class="image">
+						<img src="img/profile/adult-1845814_1920.jpg">
+					</div>
+					<div class="name">
+						Matthew
+					</div>
+					<div class="job">
+						Doctor
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide show">
+					<div class="image">
+						<img src="img/profile/beauty-1319951_1920.jpg">
+					</div>
+					<div class="name">
+						Lilly
+					</div>
+					<div class="job">
+						Student
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/flower-child-336658_1920.jpg">
+					</div>
+					<div class="name">
+						Adela
+					</div>
+					<div class="job">
+						Lawyer
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/girl-looking-away-1995624_1920.jpg">
+					</div>
+					<div class="name">
+						Bella
+					</div>
+					<div class="job">
+						Artist
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/winters-1919143_1920.jpg">
+					</div>
+					<div class="name">
+						Chloe
+					</div>
+					<div class="job">
+						Florist
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-690118_1920.jpg">
+					</div>
+					<div class="name">
+						Donna
+					</div>
+					<div class="job">
+						Engineer
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-918707_1920.jpg">
+					</div>
+					<div class="name">
+						Ellen
+					</div>
+					<div class="job">
+						Broadcaster
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-1246844_1280.jpg">
+					</div>
+					<div class="name">
+						Grace
+					</div>
+					<div class="job">
+						Actor
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-1466628_1920.jpg">
+					</div>
+					<div class="name">
+						Jane
+					</div>
+					<div class="job">
+						Model
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/young-woman-1149643_1920.jpg">
+					</div>
+					<div class="name">
+						Joy
+					</div>
+					<div class="job">
+						Accountant
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/actress-2868705_1920.jpg">
+					</div>
+					<div class="name">
+						Sellena
+					</div>
+					<div class="job">
+						Actress
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/adult-1845814_1920.jpg">
+					</div>
+					<div class="name">
+						Matthew
+					</div>
+					<div class="job">
+						Doctor
+					</div>
+					<div class="text">
+						<i>
+							"We've seen amazing results already. This blog has really helped our business."</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer-area">
+		<div class="sns">
+			<div class="item" id="facebook"><i class="fab fa-facebook-square"></i></div>
+			<div class="item" id="twitter" target="_blank" onclick="location.href='https://github.com/sl0110';"><i class="fab fa-github"></i></div>
+			<div class="item" id="linkedin" target="_blank" onclick="location.href='https://www.linkedin.com/in/limsami/';"><i class="fab fa-linkedin"></i></div>
+			<div class="item" id="google"><i class="fab fa-google-plus"></i></div>
+			<div class="item" id="instagram"><i class="fab fa-instagram"></i></div>
+		</div>
+		<div class="info">
+			<p>Copyright © 2021 Portfolio. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<div id="portfolioModal" class="modal"b>
+		<span class="close" id="modalClose">&times;</span>
+		<div class="container">
+			<img id="modalImage">
+			<div id="modalMain" class="modal-main"></div>
+			<div id="modalSub" class="modal-sub"></div>
+			<div id="modalText" class="modal-text"></div>
+		</div>
+	</div>
+
+	<script src="portfolio.js"></script>
+</body>
+</html>
